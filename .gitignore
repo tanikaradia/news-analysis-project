@@ -1,0 +1,17 @@
+# Node / frontend
+node_modules/
+.next/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Env
+.env
+
+# System
+.DS_Store
+
+# Expo (if any)
+.expo/
