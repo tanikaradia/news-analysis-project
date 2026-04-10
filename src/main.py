@@ -2,7 +2,6 @@ from scraper import fetch_news
 
 # def main():
 #     news = fetch_news()
-
 #     import json
 
 #     with open("data/news.json", "w") as f:
@@ -25,42 +24,67 @@ from utils.feedback_handler import save_feedback
 news = fetch_news()
 
 for article in news:
+    key = article["title"]
+
+    # ---- Initialize states ----
+    if key + "_done" not in st.session_state:
+        st.session_state[key + "_done"] = False
+
+    if key + "_edit" not in st.session_state:
+        st.session_state[key + "_edit"] = False
+
+    done = st.session_state[key + "_done"]
+    edit = st.session_state[key + "_edit"]
+
+    # st.write("DEBUG:", key, done, edit)
+
+    # ---- Display Article ----
     st.subheader(article["title"])
     st.write("Sentiment:", article["sentiment"])
     st.write("Category:", article["category"])
 
-    col1, col2 = st.columns(2) #split screen to 2
+    # ---- If NOT submitted ----
+    if not done and not edit:
+        col1, col2 = st.columns(2) #split screen to 2
 
-    if col1.button("👍 Correct", key=article["title"] + "c"): # key: Maintain state= titlec (c suffix)
-        save_feedback({
-            "title": article["title"],
-            "predicted_sentiment": article["sentiment"],
-            "predicted_category": article["category"],
-            "user_sentiment": article["sentiment"],
-            "user_category": article["category"],
-            "feedback": "correct"
-        })
-        st.success("Feedback saved ✅")
+        # 👍 Correct
+        if col1.button("👍 Correct", key=key + "c"): # key: Maintain state
+            save_feedback({
+                "title": article["title"],
+                "predicted_sentiment": article["sentiment"],
+                "predicted_category": article["category"],
+                "user_sentiment": article["sentiment"],
+                "user_category": article["category"],
+                "feedback": "correct"
+            })
 
-    if col2.button("👎 Wrong", key=article["title"] + "w"): # remember user action after rerun
-        st.session_state[article["title"]] = True
+            st.success("Feedback saved ✅")
+            st.session_state[key + "_done"] = True
+            st.rerun() #fresh run with new state: refresh instantly, no 2x click🌟
 
-    if st.session_state.get(article["title"], False): #true else false
+        # 👎 Wrong
+        if col2.button("👎 Wrong", key=key + "_wrong"):
+            # st.write("Wrong button clicked")   # DEBUG
+            st.session_state[key + "_edit"] = True
+            st.rerun()
+
+    # ---- If user clicked WRONG → show correction UI ----
+    if edit and not done:
         st.write("### Correct the values:") # markdown
 
         new_sentiment = st.selectbox(
             "Correct Sentiment",
             ["Positive", "Neutral", "Negative"],
-            key=article["title"] + "sent"
+            key=key + "_sent"
         )
 
         new_category = st.selectbox(
             "Correct Category",
             ["General", "Politics", "Sports", "Technology", "Business", "Crime"],
-            key=article["title"] + "cat"
+            key=key + "_cat"
         )
 
-        if st.button("Submit Correction", key=article["title"] + "submit"): 
+        if st.button("Submit Correction", key=article["title"] + "_submit"): 
             save_feedback({
                 "title": article["title"],
                 "predicted_sentiment": article["sentiment"],
@@ -68,10 +92,17 @@ for article in news:
                 "user_sentiment": new_sentiment,
                 "user_category": new_category,
                 "feedback": "wrong"
-            }) #update wrong
+            })
 
             st.success("Correction saved ✅")
 
-            # Reset state
-            st.session_state[article["title"]] = False
+            # Reset states
+            st.session_state[key + "_done"] = True
+            st.session_state[key + "_edit"] = False
             st.rerun()
+
+    # ---- If already submitted ----
+    if done:
+        st.info("Already submitted ✅")
+
+    st.markdown("---")
