@@ -15,3 +15,7 @@ __pycache__/
 
 # Expo (if any)
 .expo/
+
+test_*.py
+
+data/feedback.json

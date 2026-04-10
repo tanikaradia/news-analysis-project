@@ -30,13 +30,3 @@ def fetch_news():
 
     return articles
 
-
-# if __name__ == "__main__":
-#     news = fetch_news()
-
-#     for i in news[:5]:
-#         print(i)
-    # with open("data/news.json", "w") as f:
-    #     json.dump(news, f, indent=4)
-    # print("Saved successfully")
-    # print(len(news))
