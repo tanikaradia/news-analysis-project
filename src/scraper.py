@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-from analyzer import get_sentiment, classify_category
+from analyzer import get_sentiment, classify_category, get_final_sentiment
 
 def fetch_news():
     url = "http://feeds.bbci.co.uk/news/rss.xml"
@@ -17,8 +17,8 @@ def fetch_news():
         link = item.link.text
 
         summary = item.description.text if item.description else "" #NoneType error if no descrpn
-        # full_text = title + ". " + title + ". " + summary
-        sentiment = get_sentiment(title)
+        # full_text = title + " " + title + " " + summary
+        sentiment = get_final_sentiment(title, summary)
         category = classify_category(title + " " + summary)
 
         articles.append({
