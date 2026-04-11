@@ -19,7 +19,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))) #py import(full path(path join(src(curr),up)))
 
 import streamlit as st
-from utils.feedback_handler import save_feedback
+from feedback.feedback_handler import save_feedback
 
 news = fetch_news()
 
