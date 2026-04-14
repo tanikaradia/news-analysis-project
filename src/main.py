@@ -21,88 +21,151 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))) 
 import streamlit as st
 from feedback.feedback_handler import save_feedback
 
+# HEADER + CATEGORY BAR
+st.set_page_config(page_title="News Analysis", layout="wide")
+st.title("📰 NEWS ANALYSIS")
+st.markdown("---")
+
 news = fetch_news()
 
+from src.analyzer import classify_category, get_final_sentiment
 for article in news:
-    key = article["title"]
+    text = article["title"]
 
-    # ---- Initialize states ----
-    if key + "_done" not in st.session_state:
-        st.session_state[key + "_done"] = False
+    category = classify_category(text)
+    sentiment = get_final_sentiment(text, "")
 
-    if key + "_edit" not in st.session_state:
-        st.session_state[key + "_edit"] = False
+    article["category"] = category
+    article["sentiment"] = sentiment
 
-    done = st.session_state[key + "_done"]
-    edit = st.session_state[key + "_edit"]
+# CATEGORY FILTER ---
+selected_category = st.selectbox(
+    "Filter Category",
+    ["General",
+    "Politics",
+    "Crime",
+    "Sports",
+    "Technology",
+    "Business",
+    "Entertainment"]
+)
 
-    # st.write("DEBUG:", key, done, edit)
+# APPLY FILTER ---
+if selected_category != "General":
+    news = [article for article in news if article["category"] == selected_category]
 
-    # ---- Display Article ----
-    st.subheader(article["title"])
-    st.write("Sentiment:", article["sentiment"])
-    st.write("Category:", article["category"])
+# 3-COLUMN NEWS GRID ---
+cols = st.columns(3)
 
-    # ---- If NOT submitted ----
-    if not done and not edit:
-        col1, col2 = st.columns(2) #split screen to 2
+# CATEGORY-BASED IMAGES ---
+def get_image(category):
+    base_path = os.path.join("assets")
+    category = category.lower()
+    if "sports" in category:
+        return os.path.join(base_path, "sports.jpg")
+    elif "business" in category:
+        return os.path.join(base_path, "business.jpg")
+    elif "technology" in category:
+        return os.path.join(base_path, "technology.jpg")
+    elif "politics" in category:
+        return os.path.join(base_path, "politics.jpg")
+    elif "crime" in category:
+        return os.path.join(base_path, "crime.jpg")    
+    elif "entertainment" in category:
+        return os.path.join(base_path, "entertainment.jpg")
+    else:
+        return os.path.join(base_path, "default.jpg")
 
-        # 👍 Correct
-        if col1.button("👍 Correct", key=key + "c"): # key: Maintain state
-            save_feedback({
-                "title": article["title"],
-                "predicted_sentiment": article["sentiment"],
-                "predicted_category": article["category"],
-                "user_sentiment": article["sentiment"],
-                "user_category": article["category"],
-                "feedback": "correct"
-            })
+for idx, article in enumerate(news):
 
-            st.success("Feedback saved ✅")
-            st.session_state[key + "_done"] = True
-            st.rerun() #fresh run with new state: refresh instantly, no 2x click🌟
+    with cols[idx % 3]:
 
-        # 👎 Wrong
-        if col2.button("👎 Wrong", key=key + "_wrong"):
-            # st.write("Wrong button clicked")   # DEBUG
-            st.session_state[key + "_edit"] = True
-            st.rerun()
+        key = article["title"]
 
-    # ---- If user clicked WRONG → show correction UI ----
-    if edit and not done:
-        st.write("### Correct the values:") # markdown
+        # ---- Initialize states ----
+        if key + "_done" not in st.session_state:
+            st.session_state[key + "_done"] = False
 
-        new_sentiment = st.selectbox(
-            "Correct Sentiment",
-            ["Positive", "Neutral", "Negative"],
-            key=key + "_sent"
-        )
-
-        new_category = st.selectbox(
-            "Correct Category",
-            ["General", "Politics", "Sports", "Technology", "Business", "Crime"],
-            key=key + "_cat"
-        )
-
-        if st.button("Submit Correction", key=article["title"] + "_submit"): 
-            save_feedback({
-                "title": article["title"],
-                "predicted_sentiment": article["sentiment"],
-                "predicted_category": article["category"],
-                "user_sentiment": new_sentiment,
-                "user_category": new_category,
-                "feedback": "wrong"
-            })
-
-            st.success("Correction saved ✅")
-
-            # Reset states
-            st.session_state[key + "_done"] = True
+        if key + "_edit" not in st.session_state:
             st.session_state[key + "_edit"] = False
-            st.rerun()
 
-    # ---- If already submitted ----
-    if done:
-        st.info("Already submitted ✅")
+        done = st.session_state[key + "_done"]
+        edit = st.session_state[key + "_edit"]
 
-    st.markdown("---")
+        # ---- CARD UI ----
+        with st.container():
+            # Replace image line ---
+            st.image(get_image(article["category"]), use_container_width=True)
+
+            st.subheader(article["title"])
+            # Confidence (%) + Better Sentiment Display ---
+            st.write(f"🏷️ {article['category']}")
+            # st.write("🤖 Sentiment:", article["sentiment"])
+            sentiment = article["sentiment"]
+            if sentiment == "Positive":
+                st.success("🟢 Positive")
+            elif sentiment == "Negative":
+                st.error("🔴 Negative")
+            else:
+                st.info("🔵 Neutral")
+
+            # ---- If NOT submitted ----
+            if not done and not edit:
+                col1, col2 = st.columns(2)
+
+                if col1.button("👍 Correct", key=key + "c"):
+                    save_feedback({
+                        "title": article["title"],
+                        "predicted_sentiment": article["sentiment"],
+                        "predicted_category": article["category"],
+                        "user_sentiment": article["sentiment"],
+                        "user_category": article["category"],
+                        "feedback": "correct"
+                    })
+
+                    st.success("Feedback saved ✅")
+                    st.session_state[key + "_done"] = True
+                    st.rerun()
+
+                if col2.button("👎 Wrong", key=key + "_wrong"):
+                    st.session_state[key + "_edit"] = True
+                    st.rerun()
+
+            # ---- Correction UI ----
+            if edit and not done:
+                st.write("### Correct values:")
+
+                new_sentiment = st.selectbox(
+                    "Sentiment",
+                    ["Positive", "Neutral", "Negative"],
+                    key=key + "_sent"
+                )
+
+                new_category = st.selectbox(
+                    "Category",
+                    [
+                        "General", "Politics", "Sports",
+                        "Technology", "Business", "Crime"
+                    ],
+                    key=key + "_cat"
+                )
+
+                if st.button("Submit", key=key + "_submit"):
+                    save_feedback({
+                        "title": article["title"],
+                        "predicted_sentiment": article["sentiment"],
+                        "predicted_category": article["category"],
+                        "user_sentiment": new_sentiment,
+                        "user_category": new_category,
+                        "feedback": "wrong"
+                    })
+
+                    st.success("Correction saved ✅")
+                    st.session_state[key + "_done"] = True
+                    st.session_state[key + "_edit"] = False
+                    st.rerun()
+
+            if done:
+                st.info("Already submitted ✅")
+
+        st.markdown("---")
