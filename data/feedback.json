@@ -1,0 +1,1162 @@
+[
+  {
+    "title": "Test News",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Technology",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "EU airline industry fears fuel shortages if Strait of Hormuz stays closed",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Technology",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "correct"
+  },
+  {
+    "title": "EU fingerprint and photo travel rules come into force",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "General",
+    "feedback": "correct"
+  },
+  {
+    "title": "Can stats help you find the Grand National winner?",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "General",
+    "feedback": "correct"
+  },
+  {
+    "title": "One dead after bus carrying British tourists crashes in Canary Islands, officials say",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "General",
+    "feedback": "correct"
+  },
+  {
+    "title": "Melania Trump denies ties to Jeffrey Epstein and urges hearing for survivors",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "British man, 77, dies after tourist bus crashes in Canary Islands",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "General",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Parents' fury at Army's delay to report missing son",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "General",
+    "feedback": "correct"
+  },
+  {
+    "title": "Is the Trump-Starmer bromance over?",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Politics",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "correct"
+  },
+  {
+    "title": "Man jailed for killing abused wife who jumped from bridge",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Technology",
+    "user_sentiment": "Neutral",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Sun shines on Grand National Ladies Day",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Technology",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "correct"
+  },
+  {
+    "title": "The parents using play to stop children getting 'trapped' by screens",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Politics",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Olivier Awards 2026: Rachel Zegler's heroes, Brian Cranston's nap schedule and more moments from the night",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "General",
+    "feedback": "correct"
+  },
+  {
+    "title": "Deep-fried food banned in new plans for school dinners",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Technology",
+    "user_sentiment": "Positive",
+    "user_category": "General",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Five key failures of killer's parents and agencies ahead of Southport attack",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Crime",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "correct"
+  },
+  {
+    "title": "Italian PM condemns ally Trump over 'unacceptable' Pope criticism",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Politics",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "correct"
+  },
+  {
+    "title": "Man who threw girlfriend from tower block jailed",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Technology",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Police arrested thief in Delhi",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Stock market crashes due to global tensions",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "India wins cricket match in final over",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New AI software launched by tech company",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Another Sunday In Hell: The brutal race that thwarts the greats",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Technology",
+    "user_sentiment": "Negative",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Roblox defends expanded age\u2011checks after parents raise concerns over errors",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Technology",
+    "user_sentiment": "Neutral",
+    "user_category": "Technology",
+    "feedback": "correct"
+  },
+  {
+    "title": "Is the bite of the false widow spider dangerous?",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "General",
+    "feedback": "correct"
+  },
+  {
+    "title": "Rapper Offset hits Coachella stage days after being shot",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Deep-fried food and daily sausage rolls banned in new school dinner plans",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Technology",
+    "user_sentiment": "Positive",
+    "user_category": "General",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Ranking the biggest Premier League title slip-ups",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Trump threat to Iranian civilians 'wrong', Starmer says",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Politics",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "correct"
+  },
+  {
+    "title": "Trump deletes post depicting him as Jesus-like figure after backlash",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Politics",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "correct"
+  },
+  {
+    "title": "Police arrested gang involved in robbery",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Man killed in road rage incident",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cyber crime case reported in Delhi",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Thief caught stealing mobile phones",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Police solve major fraud case",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government announces new tax policy",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Election results declared in multiple states",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Prime minister meets foreign leaders",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New bill passed in parliament",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Opposition criticizes government decision",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "India wins T20 cricket series",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Football team loses final match",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Player scores record-breaking century",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Tournament postponed due to rain",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Team qualifies for finals after victory",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New AI model launched by tech company",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cyber attack affects major websites",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Software update improves performance",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Tech company faces data breach issue",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New smartphone launched with features",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Stock market hits all-time high",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Market crashes due to inflation fears",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Company reports huge profits this quarter",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Business suffers heavy financial losses",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Startup raises funding from investors",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Actor announces new movie project",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Film receives poor reviews from critics",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Celebrity wedding creates buzz online",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Famous singer releases new album",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Actor involved in controversy",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Police rescue kidnapped child safely",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government plans new education reforms",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cricket match ends in thrilling tie",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "AI startup faces legal challenges",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Economy shows slow growth this year",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New movie breaks box office records",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Man arrested for online fraud",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Parliament debates new economic policy",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Team wins championship after tough match",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Tech firm launches innovative product",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Stock prices fall amid uncertainty",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Celebrity shares personal struggles publicly",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Police investigate major hacking incident",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government signs international agreement",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Player injured during football match",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Software bug causes system failure",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Company expands business operations globally",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Film nominated for international awards",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Police arrest suspect in murder case investigation",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cyber fraud gang caught by police in online scam",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Thief arrested for robbery and theft in city",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Police investigate brutal attack and killing incident",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Fraud case filed against businessman for financial crime",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government announces new economic policy in parliament",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Election campaign begins as minister addresses public rally",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Prime minister discusses foreign policy with leaders",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Opposition criticizes government decision in parliament debate",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New law passed by government to reform education policy",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "India wins cricket match in international tournament",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Football team loses final match after tough competition",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cricket player scores century in world cup match",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Tennis tournament postponed due to weather conditions",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Team wins championship after exciting football match",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New AI software technology launched by tech company",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cybersecurity breach affects internet users and systems",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Tech company releases new smartphone and software update",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Artificial intelligence used in new app development",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Internet outage caused by major software system failure",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Stock market rises as economy shows growth signs",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Company reports huge financial losses in quarterly results",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Startup raises funding from investors for business expansion",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Economy affected as stock market crashes due to inflation",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Business company expands operations in global market",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Actor announces new movie film release in cinema",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Celebrity involved in controversy after public statement",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New music album released by famous singer artist",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Film receives poor reviews from critics and audience",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Movie breaks box office record with huge success",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "IMF warns global economy slowdown and financial crisis risk",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "NATO chief discusses security and defense policy with leaders",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Iran conflict raises geopolitical tensions in global politics",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "US blockade of Iranian ports explained in two minutes",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Technology",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Doctor Who actor receives award for TV series performance",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "NATO warns about rising global security threats",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Fuel prices and inflation affect global economy and markets",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Economic crisis causes major financial losses worldwide",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Team wins championship in thrilling victory match",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Strait of Hormuz shipping routes affected by geopolitical tensions",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Hezbollah conflict impacts Middle East political situation",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Primark burglary gang involved in robbery and theft crime case",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Doctor Who actor Ncuti Gatwa receives award for TV series",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "US politician JD Vance supports election campaign strategy",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Champions League match decides football transfer future",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "England cricket player Ben Stokes discusses match strategy",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Arsenal manager Arteta prepares team for upcoming match",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "BBC News app",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "General",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Ben Stokes leads England to victory in cricket match",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Arsenal manager Arteta discusses team strategy ahead of big match",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Champions League final draws millions of football fans worldwide",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Police arrest suspect in major burglary case",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Man jailed for violent assault in city centre",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Stock market rises as inflation fears ease",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Oil prices fall after global supply increases",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government announces new policy to boost economy",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "US president addresses nation on foreign policy crisis",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New AI software revolutionizes healthcare industry",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cyber attack targets major tech company servers",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Famous actor stars in new blockbuster movie release",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Music concert attracts thousands of fans in city",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cricket tournament sees record-breaking scores",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Football player suffers injury during match",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Fraud case exposes major financial scam",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Company profits increase in latest quarterly report",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Parliament debates new law on national security",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Tech startup launches innovative mobile app",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "TV series finale receives mixed reactions from audience",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  }
+]

@@ -1,19 +1,86 @@
 from textblob import TextBlob
+import pickle
+
+# Load ML models
+try:
+    with open("models/category_model.pkl", "rb") as f: #read binary
+        model_cat = pickle.load(f)
+
+    with open("models/sentiment_model.pkl", "rb") as f:
+        model_sent = pickle.load(f)
+
+    with open("models/vectorizer.pkl", "rb") as f:
+        vectorizer = pickle.load(f)
+
+    ML_AVAILABLE = True
+except Exception as e:
+    print("❌ ML Load Error:", e)
+    ML_AVAILABLE = False
+
+
+def ml_predict_category(text):
+    # raise Exception("CHECK WHERE THIS IS CALLED")
+    text_vec = vectorizer.transform([text])
+    
+    probs = model_cat.predict_proba(text_vec)[0] # gives probab
+    max_prob = float(max(probs))        # force float
+
+    prediction = model_cat.predict(text_vec)[0]
+
+    # force clean string
+    if isinstance(prediction, (list, tuple)):
+        prediction = prediction[0]
+
+    prediction = str(prediction)    
+    # prediction = str(model_cat.predict(text_vec)[0])  # force string
+
+    return prediction, max_prob
+
+def ml_predict_sentiment(text):
+    # return model_sent.predict(text_vec)[0]
+
+    text_vec = vectorizer.transform([text]) 
+
+    probs = model_sent.predict_proba(text_vec)[0]
+    max_prob = max(probs)
+    prediction = model_sent.predict(text_vec)[0]
+
+    return prediction, max_prob
 
 # Sentiment Function
 def get_sentiment(text):
-    # polarity = TextBlob(text).sentiment.polarity #Analyze text- tone, ret polarity
-    # if polarity > 0:
-    #     return "Positive"
-    # elif polarity < 0:
-    #     return "Negative"
-    # else:
-    #     return "Neutral"
+
     return TextBlob(text).sentiment.polarity
 
 def get_final_sentiment(title, summary):
     text = (title + " " + summary).lower()
-    
+
+    if len(text.split()) <= 3:
+        return "Neutral"
+
+     # Try ML first
+    if ML_AVAILABLE:
+        # try:
+        #     # print("Using ML for category")
+        #     return ml_predict_sentiment(text) + " (ML)"
+        # except Exception as e:
+        #     print("❌ ML Error:", e)
+        try:
+            pred, conf = ml_predict_sentiment(text)
+
+            # print(f"ML Sentiment: {pred}, Confidence: {conf:.2f}") # Debugging and gives eg.ML Sentiment: Positive, Confidence: 0.42
+
+            if conf > 0.25:
+                print("ML used")  # debug
+                # return str(pred) + " (ML)"
+                return str(pred)
+
+            else:
+                print("⚠️ Low confidence → using rules")
+
+        except Exception as e:
+            print("❌ ML Error:", e)
+    # Fallback
     # Rule: Question / uncertainty → Neutral
     if "?" in title or "could" in title.lower():
         return "Neutral"
@@ -34,13 +101,6 @@ def get_final_sentiment(title, summary):
     title_score = get_sentiment(title)
     summary_score = get_sentiment(summary)
 
-    # # Rule 1: If title is strong → trust it
-    # if title_sent != "Neutral":
-    #     return title_sent
-
-    # # Rule 2: If title neutral → use summary
-    # return summary_sent
-
     # strongly opinionated → trust it
     if abs(title_score) > 0.2:
         return "Positive" if title_score > 0 else "Negative"
@@ -58,20 +118,50 @@ def get_final_sentiment(title, summary):
 # Category Function
 def classify_category(text):
     # remove noisy words
-    text = text.lower().replace("watch:", "").replace("video:", "")
+    # text = text.lower().replace("watch:", "").replace("video:", "")
 
+    text_clean = text.lower().replace("watch:", "").replace("video:", "")
+    
+    if len(text_clean.split()) <= 3:
+        return "General"
+        # return "General (Rule)"
+    
+    # Priority override (before ML)b
+    # if any(word in text_clean for word in ["fuel", "price", "oil", "inflation", "market"]):
+    #     return "Business (Rule)"
+
+    # Try ML first
+    if ML_AVAILABLE:
+        # try:
+            # print("Using ML for category")
+            # return ml_predict_category(text_clean) + " (ML)"
+            pred, conf = ml_predict_category(text_clean)
+
+            # print(f"ML Category: {pred}, Confidence: {conf:.2f}")
+
+            if conf > 0.25:
+                # print("DEBUG:", pred, type(pred), conf, type(conf))
+                print("ML used")  # debug
+                return pred  
+            else:
+                print("⚠️ Low confidence → using rules")
+
+        # except Exception as e:
+        #     print("❌ ML Error:", e)
+    # Fallback
     categories = {
-        "Politics": ["election", "government", "minister", "pm", "president"],
-        "Crime": ["police", "crime", "thief", "murder", "arrest"],
-        "Sports": ["match", "tournament", "cricket", "football", "player"],
-        "Technology": ["ai", "technology", "software", "tech", "internet"],
-        "Business": ["market", "stock", "business", "economy", "company"],
-        "Entertainment": ["movie", "film", "celebrity", "actor", "show"]
+        "Politics": ["election", "government", "minister", "pm", "president", "policy", "parliament", "nato", "war", "israel"],
+        "Crime": ["police", "crime", "thief", "murder", "arrest", "kill", "fraud", "theft", "robbery", "burglary", "attack", "jailed", "prison", "beating", "assault"],
+        "Sports": ["match", "tournament", "cricket", "football", "player", "goal", "score", "championship", "olympics", "pool", "league", "cup", "coach", "batter", "trainer", "race"],
+        "Technology": ["ai", "technology", "software", "tech", "internet", "internet", "cyber", "digital"],
+        "Business": ["market", "stock", "business", "economy", "company", "finance", "imf", "growth", "inflation", "fuel", "price", "oil"],
+        "Entertainment": ["movie", "film", "celebrity", "actor", "show", "music", "tv", "series"]
     }
 
     for category, keywords in categories.items(): #items(key-c, value-k)
-        if any(word in text for word in keywords): #keyword in text?: first match
+        words = text_clean.split()
+        if any(word in words for word in keywords):
             return category
-    
+            # return category + " (Rule)"
+
     return "General"
-    
