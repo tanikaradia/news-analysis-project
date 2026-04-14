@@ -4,7 +4,7 @@ import json
 from analyzer import get_sentiment, classify_category, get_final_sentiment
 
 def fetch_news():
-    url = "http://feeds.bbci.co.uk/news/rss.xml"
+    url = "https://news.google.com/rss/search?q=government+india"
 
     response = requests.get(url)
     soup = BeautifulSoup(response.text, "xml") 

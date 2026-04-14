@@ -21,12 +21,44 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))) 
 import streamlit as st
 from feedback.feedback_handler import save_feedback
 
+MINISTRY_MAP = {
+    "Politics": "External Affairs",
+    "Business": "Finance",
+    "Crime": "Home Affairs",
+    "Sports": "Youth Affairs and Sports",
+    "Technology": "Electronics and IT",
+    "Entertainment": "Information & Broadcasting",
+    "General": "General"
+}
+
+# gov_keywords = [
+#     "india", "government", "ministry",
+#     "pm", "modi", "policy", "parliament"
+# ]
+
 # HEADER + CATEGORY BAR
 st.set_page_config(page_title="News Analysis", layout="wide")
-st.title("📰 NEWS ANALYSIS")
+
+col1, col2 = st.columns([8, 2])
+
+with col1:
+    st.title("📰 NEWS ANALYSIS")
+
+with col2:
+    st.markdown("<div style='margin-top: 20px;'></div>", unsafe_allow_html=True)
+    if st.button("🔄 Refresh News"):
+        st.rerun()
+
 st.markdown("---")
 
 news = fetch_news()
+
+# filtered_news = []
+# for article in news:
+#     title = article["title"].lower()
+#     if any(word in title for word in gov_keywords):
+#         filtered_news.append(article)
+# news = filtered_news
 
 from src.analyzer import classify_category, get_final_sentiment
 for article in news:
@@ -36,23 +68,31 @@ for article in news:
     sentiment = get_final_sentiment(text, "")
 
     article["category"] = category
+    article["ministry"] = MINISTRY_MAP.get(category, "General")
     article["sentiment"] = sentiment
 
 # CATEGORY FILTER ---
 selected_category = st.selectbox(
     "Filter Category",
-    ["General",
-    "Politics",
-    "Crime",
-    "Sports",
-    "Technology",
-    "Business",
-    "Entertainment"]
+    [
+    "All",
+    "External Affairs",
+    "Finance",
+    "Home Affairs",
+    "Youth Affairs and Sports",
+    "Electronics and IT",
+    "Information & Broadcasting",
+    "General"
+]
 )
 
 # APPLY FILTER ---
-if selected_category != "General":
-    news = [article for article in news if article["category"] == selected_category]
+if selected_category != "All":
+    news = [article for article in news if article["ministry"] == selected_category]
+
+language = st.selectbox("Language", ["English", "Hindi"])
+if language == "Hindi":
+    st.info("Hindi support coming soon")
 
 # 3-COLUMN NEWS GRID ---
 cols = st.columns(3)
@@ -99,9 +139,14 @@ for idx, article in enumerate(news):
 
             st.subheader(article["title"])
             # Confidence (%) + Better Sentiment Display ---
-            st.write(f"🏷️ {article['category']}")
-            # st.write("🤖 Sentiment:", article["sentiment"])
+            # st.write(f"🏷️ {article['category']}")
+            st.write(f"🏛️ {article['ministry']}")
+
             sentiment = article["sentiment"]
+
+            if sentiment == "Negative":
+                print(f"🚨 ALERT: Negative news → {article['title']} | Ministry: {article['ministry']}")
+
             if sentiment == "Positive":
                 st.success("🟢 Positive")
             elif sentiment == "Negative":
