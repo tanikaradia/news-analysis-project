@@ -86,9 +86,9 @@ def get_final_sentiment(title, summary):
         return "Neutral"
     
     # ---- Logic: Strong negative keywords (override) ----
-    negative_keywords = ["murder", "kill", "death", "attack", "crime", "killer"]
+    negative_keywords = ["murder", "kill", "death", "attack", "crime"]
     neutral_keywords = ["stroke", "hospital", "ill", "injury"]
-    positive_keywords = ["success", "win", "winner", "won", "victory", "growth", "triumph", "historic"]
+    positive_keywords = ["success", "win", "won", "victory", "growth", "triumph", "historic", "launch", "announce"]
 
     if any(word in text for word in negative_keywords):
         return "Negative"
@@ -150,12 +150,12 @@ def classify_category(text):
         #     print("❌ ML Error:", e)
     # Fallback
     categories = {
-        "Politics": ["election", "government", "minister", "pm", "president", "policy", "parliament", "nato", "war", "israel"],
-        "Crime": ["police", "crime", "thief", "murder", "arrest", "kill", "fraud", "theft", "robbery", "burglary", "attack", "jailed", "prison", "beating", "assault"],
-        "Sports": ["match", "tournament", "cricket", "football", "player", "goal", "score", "championship", "olympics", "pool", "league", "cup", "coach", "batter", "trainer", "race"],
+        "Politics": ["election", "government", "minister", "pm", "president", "policy", "parliament", "nato", "war", "israel", "embassy", "border"],
+        "Crime": ["police", "crime", "thief", "murder", "arrest", "kill", "fraud", "theft", "robbery", "burglary", "attack", "jail", "prison", "beating", "assault", "steal", "custody"],
+        "Sports": ["match", "tournament", "cricket", "football", "player", "goal", "score", "championship", "olympics", "pool", "league", "cup", "coach", "batter", "trainer", "race", "world cup", "golf"],
         "Technology": ["ai", "technology", "software", "tech", "internet", "internet", "cyber", "digital"],
-        "Business": ["market", "stock", "business", "economy", "company", "finance", "imf", "growth", "inflation", "fuel", "price", "oil"],
-        "Entertainment": ["movie", "film", "celebrity", "actor", "show", "music", "tv", "series"]
+        "Business": ["market", "stock", "business", "economy", "company", "finance", "imf", "growth", "inflation", "fuel", "price", "oil", "layoff"],
+        "Entertainment": ["movie", "film", "celebrity", "actor", "show", "music", "tv", "series", "album", "cast"]
     }
 
     for category, keywords in categories.items(): #items(key-c, value-k)

@@ -120,8 +120,7 @@ for idx, article in enumerate(news):
 
     with cols[idx % 3]:
 
-        key = article["title"]
-
+        key = f"{article['title']}_{idx}"
         # ---- Initialize states ----
         if key + "_done" not in st.session_state:
             st.session_state[key + "_done"] = False
@@ -138,8 +137,9 @@ for idx, article in enumerate(news):
             st.image(get_image(article["category"]), use_container_width=True)
 
             st.subheader(article["title"])
+            st.markdown(f"[🔗 Read more]({article['link']})")
             # Confidence (%) + Better Sentiment Display ---
-            # st.write(f"🏷️ {article['category']}")
+            st.write(f"🏷️ {article['category']}")
             st.write(f"🏛️ {article['ministry']}")
 
             sentiment = article["sentiment"]
