@@ -1374,5 +1374,421 @@
     "user_sentiment": "Positive",
     "user_category": "Sports",
     "feedback": "wrong"
+  },
+  {
+    "title": "India Pharma summit highlights innovation and funding needs",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "India democracy and constitution overview article",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Sports",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "India US resume talks on bilateral trade agreement",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "LPG supply restoration may take years due to infrastructure damage",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Politics",
+    "user_sentiment": "Negative",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "India data center expansion faces local resistance",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Mobile exports scheme to boost electronics manufacturing in India",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Startup India fund launched to boost innovation ecosystem",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Fuel price stabilisation policy proposed to control inflation",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Politics",
+    "user_sentiment": "Neutral",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Miss India supports women reservation bill decision",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government crackdown on social media reels targeting PM",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Politics",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Court issues notice on data protection law challenge",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Technology",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Delimitation debate raises concerns over South India representation",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "India banking liquidity rises due to government spending",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government plans mobile PLI scheme to boost manufacturing",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Analysis of possible Lok Sabha seat distribution after expansion",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Fuel price stabilisation plan to control petrol diesel volatility",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Business",
+    "user_sentiment": "Neutral",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Central Administrative Tribunal to hold circuit sitting in Kargil",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Politics",
+    "user_sentiment": "Neutral",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Editorial urges government to address delimitation concerns",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Vedanta power plant blast kills multiple people",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Online LPG bookings surge reflecting rising consumer trust",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "MSME hackathon highlights innovation and startup ideas",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cyber security awareness programme launched across rural India",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "India wholesale inflation rises based on government data",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "Politics",
+    "user_sentiment": "Neutral",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Orange economy initiative faces trust crisis despite push",
+    "predicted_sentiment": "Negative",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Formula 1 return to India faces delays despite government support",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Politics",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "India F1 return push continues amid uncertainty",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Technology",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Meteor shower expected to light up skies this week",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Politics",
+    "user_sentiment": "Neutral",
+    "user_category": "General",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government announces new digital payments initiative to boost cashless economy",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Stock markets remain steady amid global economic uncertainty",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Police arrest suspect in major financial fraud case",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "India launches new semiconductor manufacturing policy",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Heavy rains disrupt normal life in several states",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "General",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cricket team secures thrilling victory in final match",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government proposes new tax reforms to boost economy",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Cyber attack targets major banking systems across country",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New education policy focuses on digital learning expansion",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Court orders investigation into corruption allegations",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Crime",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Football league season to begin next month with new format",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Startup raises funding to expand AI-based solutions",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Business",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Fuel prices remain unchanged amid global oil fluctuations",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Neutral",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Movie breaks box office records on opening weekend",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Scientists discover new method to improve battery efficiency",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Train services delayed due to technical issues",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "General",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government signs international trade agreement with neighboring country",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Politics",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Basketball player suffers injury ahead of major tournament",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Sports",
+    "user_sentiment": "Negative",
+    "user_category": "Sports",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New smartphone launch attracts huge customer interest",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "Business",
+    "user_sentiment": "Positive",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Protests erupt over controversial government policy",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Politics",
+    "user_sentiment": "Negative",
+    "user_category": "Politics",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Bank introduces new loan scheme for small businesses",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Business",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Wildlife conservation efforts show positive results in national parks",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "General",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Hackers leak sensitive data from major tech firm",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "General",
+    "user_sentiment": "Negative",
+    "user_category": "Technology",
+    "feedback": "wrong"
+  },
+  {
+    "title": "New music album tops global charts within days of release",
+    "predicted_sentiment": "Positive",
+    "predicted_category": "General",
+    "user_sentiment": "Positive",
+    "user_category": "Entertainment",
+    "feedback": "wrong"
+  },
+  {
+    "title": "Government releases report on climate change impact",
+    "predicted_sentiment": "Neutral",
+    "predicted_category": "Politics",
+    "user_sentiment": "Neutral",
+    "user_category": "General",
+    "feedback": "wrong"
   }
 ]

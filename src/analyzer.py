@@ -87,7 +87,7 @@ def get_final_sentiment(title, summary):
     
     # ---- Logic: Strong negative keywords (override) ----
     negative_keywords = ["murder", "kill", "death", "attack", "crime"]
-    neutral_keywords = ["stroke", "hospital", "ill", "injury"]
+    neutral_keywords = ["data", "report", "expected"]
     positive_keywords = ["success", "win", "won", "victory", "growth", "triumph", "historic", "launch", "announce"]
 
     if any(word in text for word in negative_keywords):
@@ -150,12 +150,12 @@ def classify_category(text):
         #     print("❌ ML Error:", e)
     # Fallback
     categories = {
-        "Politics": ["election", "government", "minister", "pm", "president", "policy", "parliament", "nato", "war", "israel", "embassy", "border"],
-        "Crime": ["police", "crime", "thief", "murder", "arrest", "kill", "fraud", "theft", "robbery", "burglary", "attack", "jail", "prison", "beating", "assault", "steal", "custody"],
+        "Technology": ["ai", "technology", "software", "tech", "internet", "internet", "cyber", "digital", "data", "mobile", "semiconductor"],
+        "Business": ["market", "stock", "business", "economy", "company", "finance", "imf", "growth", "inflation", "fuel", "price", "oil", "layoff", "lpg", "funding", "investment"],
         "Sports": ["match", "tournament", "cricket", "football", "player", "goal", "score", "championship", "olympics", "pool", "league", "cup", "coach", "batter", "trainer", "race", "world cup", "golf"],
-        "Technology": ["ai", "technology", "software", "tech", "internet", "internet", "cyber", "digital"],
-        "Business": ["market", "stock", "business", "economy", "company", "finance", "imf", "growth", "inflation", "fuel", "price", "oil", "layoff"],
-        "Entertainment": ["movie", "film", "celebrity", "actor", "show", "music", "tv", "series", "album", "cast"]
+        "Politics": ["election", "minister", "pm", "president", "policy", "parliament", "nato", "war", "israel", "embassy", "border", "constitution"],
+        "Crime": ["police", "crime", "thief", "murder", "arrest", "kill", "fraud", "theft", "robbery", "burglary", "attack", "jail", "prison", "beating", "assault", "steal", "custody"],
+        "Entertainment": ["movie", "film", "celebrity", "actor", "show", "music", "tv", "series", "album", "cast", "biopic"]
     }
 
     for category, keywords in categories.items(): #items(key-c, value-k)
