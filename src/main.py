@@ -42,7 +42,7 @@ st.set_page_config(page_title="News Analysis", layout="wide")
 col1, col2 = st.columns([8, 2])
 
 with col1:
-    st.title("📰 NEWS ANALYSIS")
+    st.title("📰 SMART SENTIMENT INSIGHTS")
 
 with col2:
     st.markdown("<div style='margin-top: 20px;'></div>", unsafe_allow_html=True)
@@ -134,9 +134,11 @@ for idx, article in enumerate(news):
         # ---- CARD UI ----
         with st.container():
             # Replace image line ---
-            st.image(get_image(article["category"]), use_container_width=True)
-
-            st.subheader(article["title"])
+            st.image(get_image(article["category"]), width=220)
+            st.markdown(
+                f"<div style='font-size:25px; font-weight:600;'>{article['title']}</div>",
+                unsafe_allow_html=True
+            )
             st.markdown(f"[🔗 Read more]({article['link']})")
             # Confidence (%) + Better Sentiment Display ---
             st.write(f"🏷️ {article['category']}")
