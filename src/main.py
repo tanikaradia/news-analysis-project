@@ -31,11 +31,6 @@ MINISTRY_MAP = {
     "General": "General"
 }
 
-# gov_keywords = [
-#     "india", "government", "ministry",
-#     "pm", "modi", "policy", "parliament"
-# ]
-
 # HEADER + CATEGORY BAR
 st.set_page_config(page_title="News Analysis", layout="wide")
 
